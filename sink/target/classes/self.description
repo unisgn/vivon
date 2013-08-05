@@ -1,0 +1,21 @@
+
+Partner
+Material
+Activity
+	Sale
+		SaleQuotation
+	Purchase
+		PurchaseQuotation
+	Storage
+		DeliveryNote
+	Account
+		GeneralJournal
+	Factory
+		FactoryOrder
+		
+MessageSystem // push;
+BroadcastSystem // poll;
+JournalSystem // User oriented;
+LogSystem // developer oriented;
+
+Security

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="sink"
+  id="myeclipse.1373114102284"
+  context-root="/sink"
+  j2ee-spec="1.7"
+  archive="sink.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
