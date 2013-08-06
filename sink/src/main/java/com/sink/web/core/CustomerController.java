@@ -64,6 +64,7 @@ public class CustomerController {
 	
 	
 	@RequestMapping(value="/search")
+	@ResponseBody
 	public Map<String, Object> searchCustomers(@RequestParam String searchkey) {
 	
 	}
