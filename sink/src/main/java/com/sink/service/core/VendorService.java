@@ -11,8 +11,11 @@ public interface VendorService {
 	
 	public List<Vendor> findAllVendors(boolean active);
 	
+	public List<Vendor> searchVendors(String keyword);
+	
 	public int addVendor(Vendor vendor);
 	public void updateVendor(Vendor vendor);
+	
 
 
 }

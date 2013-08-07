@@ -10,11 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 import com.sink.domain.core.Customer;
-import com.sink.domain.core.CustomerLabel;
-import com.sink.domain.core.DroidAssistant;
-import com.sink.domain.core.User;
 import com.sink.lib.core.ResponseMap;
-import com.sink.lib.core.SecurityContext;
 import com.sink.service.core.CustomerLabelService;
 import com.sink.service.core.CustomerService;
 import com.sink.service.core.UserService;
@@ -66,7 +62,8 @@ public class CustomerController {
 	@RequestMapping(value="/search")
 	@ResponseBody
 	public Map<String, Object> searchCustomers(@RequestParam String searchkey) {
-	
+		List<Customer> cl = cs.searchCustomers(searchkey);
+		return ResponseMap.returnMap("true", cl, "");
 	}
 	
 		

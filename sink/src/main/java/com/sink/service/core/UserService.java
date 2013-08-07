@@ -1,7 +1,5 @@
 package com.sink.service.core;
 
-import org.springframework.security.access.prepost.PreAuthorize;
-
 import com.sink.domain.core.User;
 
 public interface UserService {

@@ -15,7 +15,13 @@ Activity
 		
 MessageSystem // push;
 BroadcastSystem // poll;
-JournalSystem // User oriented;
+AccessJournalSystem // User oriented;
 LogSystem // developer oriented;
 
 Security
+
+
+
+/com/sink/service  AS Unix /bin, /usr/bin, ...
+
+/com/sink/web/*Controller,  AS Unix Shell
