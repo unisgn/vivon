@@ -18,6 +18,8 @@ public interface CustomerService {
 	
 	public Customer findCustomerByNumber(String number);
 	
+	public Customer findCustomerByCode(String code);
+	
 	public Customer findCustomerById(int id);
 	
 	
@@ -33,7 +35,9 @@ public interface CustomerService {
 
 	public int addCustomer(Customer customer);
 	
-	public void updateCustomer(Customer customer);	
+	public void updateCustomer(Customer customer);
+
+	public void toggleActiveOfCustomer(int id);	
 
 	public void addLabelToCustomer(CustomerLabel label, Customer customer);
 	
@@ -48,5 +52,4 @@ public interface CustomerService {
 	public void addPrivateCustomPropertyToCustomer(CustomProperty property, Customer customer);
 	public void addPublicCustomPropertyToCustomer(CustomProperty property, Customer customer);
 
-	
 }

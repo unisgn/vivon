@@ -32,5 +32,17 @@ public class PartnerController {
 
 	}
 
+	@RequestMapping(value="/{id}/contacts", method=RequestMethod.GET)
+	@ResponseBody
+	public Map<String, Object> findContactsByPartner(@PathVariable int id) {
+
+	}
+
+	@RequestMapping(value="/{id}/contacts", method=RequestMethod.POST)
+	@ResponseBody
+	public Map<String, Object> addContactToPartner(@PathVariable int id, @RequestBody Contact contact) {
+
+	}
+
 	
 }
