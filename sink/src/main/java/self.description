@@ -21,7 +21,11 @@ LogSystem // developer oriented;
 Security
 
 
+UNIX: K.I.S.S
+/com/sink/service/*Service,  AS Unix /bin executable binary
 
-/com/sink/service  AS Unix /bin, /usr/bin, ...
+/com/sink/web/*Controller,  AS Unix Shell script
 
-/com/sink/web/*Controller,  AS Unix Shell
+Domain Resource Abstract Layer
+Resource: primative field, reference, collection,
+collection item: primative field, reference(independent), reference(dependent)
