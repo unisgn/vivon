@@ -1,4 +1,4 @@
-package com.sink.domain.core;
+package com.sink.lib;
 
 public enum MessageLabelBuildIn {
 	INBOX,

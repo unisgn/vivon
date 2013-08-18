@@ -1,4 +1,4 @@
-﻿package com.sink.exception.core;
+﻿package com.sink.exception;
 
 public class PartnerException extends RuntimeException {
 

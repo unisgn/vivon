@@ -1,4 +1,4 @@
-package com.sink.domain.core;
+package com.sink.domain.util;
 
 import java.util.Date;
 
