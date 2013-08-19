@@ -1,6 +1,5 @@
-package com.sink.repository.core;
+package com.sink.security;
 
-import com.sink.domain.core.UserGroup;
 
 public interface UserGroupRepository extends AdvancedGenericRepository<UserGroup> {
 

@@ -26,45 +26,16 @@ public class DroidAssistantController {
 		
 	}
 	
-	@RequestMapping(method=RequestMethod.GET, value="/{id}")
+	@RequestMapping(method=RequestMethod.GET, value="/id/{id}")
 	@ResponseBody
 	public Map<String, Object> getAssistant(@PathVariable int id) {
 		
 	}
 	
-	@RequestMapping(method=RequestMethod.PUT, value="/{id}")
+	@RequestMapping(method=RequestMethod.PUT, value="/id/{id}")
 	@ResponseBody
 	public Map<String, Object> updateAssistant(@RequestBody DroidAssistant assistant) {
 		
 	}
 	
-	@RequestMapping(method=RequestMethod.GET, value="/{id}/customerlabels")
-	@ResponseBody
-	public Map<String, Object> getCustomerLabelsByAssistant(@PathVariable int id) {
-		
-	}
-	
-	@RequestMapping(method=RequestMethod.POST, value="/{id}/customerlabels")
-	@ResponseBody
-	public Map<String, Object> addCustomerLabelToAssistant(@PathVariable int id, @RequestBody CustomerLabel label) {
-		
-	}
-	
-	@RequestMapping(value="/{id}/customers", method=RequestMethod.GET)
-	@ResponseBody
-	public Map<String, Object> getCustomersByAssistant(@PathVariable int id) {
-		
-	}
-	
-	@RequestMapping(value="/{id}/customers", method=RequestMethod.POST)
-	@ResponseBody
-	public Map<String, Object> addCustomerToAssistant(@PathVariable int id, @RequestBody Customer customer) {
-		
-	}
-	
-	@RequestMapping(value="/{id}/customers/search", method=RequestMethod.GET)
-	@ResponseBody
-	public Map<String, Object> searchCustomerUnderAssistant(@PathVariable int id, @RequestParam String key) {
-		
-	}
 }

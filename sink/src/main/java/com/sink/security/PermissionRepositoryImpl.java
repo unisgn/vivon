@@ -1,4 +1,4 @@
-package com.sink.repository.core.impl;
+package com.sink.security;
 
 import java.util.List;
 
@@ -7,8 +7,6 @@ import javax.annotation.Resource;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
-import com.sink.domain.core.Permission;
-import com.sink.repository.core.PermissionRepository;
 
 @Repository
 public class PermissionRepositoryImpl implements PermissionRepository {

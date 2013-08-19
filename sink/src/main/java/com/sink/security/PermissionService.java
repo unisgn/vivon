@@ -1,8 +1,6 @@
-package com.sink.service.core;
+package com.sink.security;
 
 import java.util.List;
-
-import com.sink.domain.core.Permission;
 
 public interface PermissionService {
 	List<Permission> getAll();

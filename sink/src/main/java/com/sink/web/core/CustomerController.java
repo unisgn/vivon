@@ -43,7 +43,7 @@ public class CustomerController {
 		//TODO catch CustomerExistException;
 	}
 	
-	@RequestMapping(method=RequestMethod.GET, value="/{id}")
+	@RequestMapping(method=RequestMethod.GET, value="/id/{id}")
 	@ResponseBody
 	public Map<String, Object> getCustomer(@PathVariable int id) {
 
@@ -51,7 +51,7 @@ public class CustomerController {
 		return ResponseMap.returnMap("true", c, "");
 	}
 	
-	@RequestMapping(method=RequestMethod.PUT, value="/{id}")
+	@RequestMapping(method=RequestMethod.PUT, value="/id/{id}")
 	@ResponseBody
 	public Map<String, Object> updateCustomer(@RequestBody Customer customer) {
 		cs.updateCustomer(customer);
@@ -59,13 +59,19 @@ public class CustomerController {
 	}
 	
 	
-	@RequestMapping(value="/search")
+	@RequestMapping(value="/search", method=RequestMethod.GEt)
 	@ResponseBody
 	public Map<String, Object> searchCustomers(@RequestParam String searchkey) {
 		List<Customer> cl = cs.searchCustomers(searchkey);
 		return ResponseMap.returnMap("true", cl, "");
 	}
 	
+	@RequestMapping(value="/assistant/id/{assistantId}", method=RequestMethod.GET)
+	@ResponseBody
+	public Map<String, Object> findCustomersByAssistant(@PathVariable int assistantId) {
+
+	}
+
 		
 }
 

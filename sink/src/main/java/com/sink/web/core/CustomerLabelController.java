@@ -10,17 +10,23 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value="/resty/customerlabels")
 public class CustomerLabelController {
 
-	@RequestMapping(value="/{id}", method=RequestMethod.GET)
+	@RequestMapping(value="/id/{id}", method=RequestMethod.GET)
 	@ResponseBody
 	public Map<String, Object> getCustomerLabel(@PathVariable int id) {
 		
 	}
 	
-	@RequestMapping(value="{/id}", method=RequestMethod.POST)
+	@RequestMapping(value="/id/{id}", method=RequestMethod.PUT)
 	@ResponseBody
 	public Map<String, Object> updateCustomerLabel(@RequestBody CustomerLabel label) {
 		
 	}
 	
+
+	@RequestMapping(value="/assistant/id/{assistantId}", method=RequestMethod.GET)
+	@ResponseBody
+	public Map<String, Object> findCustomerLabelsByAssistant(@PathVariable int assistant id) {
+
+	}
 	
 }
