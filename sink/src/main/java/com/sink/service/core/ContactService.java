@@ -14,6 +14,7 @@ public interface ContactService {
 	public int addContact(Contact contact);
 
 	public void updateContact(Contact contact);
-
+    public void toggleActiveOfContact(int id);
+    
 
 }

@@ -6,13 +6,17 @@ import java.util.Set;
 public class Employee {
 	
 	private Partner partner;
+
 	private String number;
 	private String code;
-	private String name;
+	private String nickName;
 	private String searchKey;
 	private String searchField;
 	
-	private Department department;
+	private Department department;    
+    private String jobTitle;
+    private Employee supervisor;
+
 	
 	private Set<Note> privateNotes = new HashSet<Note>();
 	private Set<Note> publicNotes = new HashSet<Note>();

@@ -22,10 +22,9 @@ public interface CustomerService {
 	
 	public Customer findCustomerById(int id);
 	
+	public List<Customer> findAllCustomers();
 	
-	public List<Customer> findAllCustomers(boolean active);
-	
-	public List<Customer> findCustomersByAssistant(DroidAssistant assistant, boolean active);
+	public List<Customer> findCustomersByAssistant(DroidAssistant assistant);
 
 	public List<Customer> searchCustomers(String keyword);
 

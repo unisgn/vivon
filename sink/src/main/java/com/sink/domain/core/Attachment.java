@@ -12,10 +12,10 @@ public class Attachment extends EntityBase {
 	private String mime;
 	private String size;
 	
-	private Date uploadDate;
-	private User uploadBy;
-	private Date lastDownloadDate;
-	private User lastDownloadBy;
+	private Date dateOfUpload;
+	private User uploadedBy;
+	private Date dateOfLastDownload;
+	private User lastDownloadedBy;
 	
 	private int totalDownload;
 	

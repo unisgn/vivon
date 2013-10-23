@@ -24,14 +24,9 @@ public class Activity extends EntityAuditable {
 	
 	private String activityDescription;
 	
-	
-	private BigDecimal amount;
-	
 	private Date dateOfSubmit;
 	private User submitBy;
 	private Date dateOfApprove;
 	private User approvedBy;
-	
-
 
 }

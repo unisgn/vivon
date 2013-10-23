@@ -12,8 +12,8 @@ public interface PartnerService {
 	public Partner findPartnerByCode(String code);
 	public Partner findPartnerByName(String name);
 	
-	public List<Partner> findAllPartners(boolean active);
-	public List<Partner> findPartnersByRoleLabel(PartnerRoleLabel label, boolean active);
+	public List<Partner> findAllPartners();
+	public List<Partner> findPartnersByRoleLabel(PartnerRoleLabel label);
 	public List<Partner> searchPartners(String keyword);
 	
 }

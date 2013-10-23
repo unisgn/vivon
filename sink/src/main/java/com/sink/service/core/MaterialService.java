@@ -3,7 +3,10 @@ package com.sink.service.core;
 public interface MaterialService {
 
 	public Material findMaterialById(int id);
-	public List<Material> findMaterialsByCategory(MaterialCategory category, boolean active);
+    public Material findMaterialByCode(String code);
+    public Material findMaterialByNumber(String number);
+    
+	public List<Material> findMaterialsByCategory(MaterialCategory category);
 
 	public List<Material> findMaterialsByPropertySet(Set<MaterialPropertyValue> propertySet);
 
@@ -12,7 +15,5 @@ public interface MaterialService {
 	public int addMaterial(Material material);
 
 	public void updateMaterial(Material material);
-
-
-
+    public void toggleActiveOfMaterial(int id);
 }
