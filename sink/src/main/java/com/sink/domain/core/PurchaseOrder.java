@@ -8,14 +8,14 @@ import com.sink.lib.core.PurchaseOrderStatus;
 
 public class PurchaseOrder {
 
-	//concreateActivityNumber;
-	private String orderNumber;
-	
-	private Set<PurchaseOrderItem> items = new HashSet<PurchaseOrderItem>();
-	
-	private BigDecimal totalAmount;
-	private BigDecimal totalTax;
-	private BigDecimal totalDelivered;
-	
-	private PurchaseOrderStatus status;
+    //concreateActivityNumber;
+    private String orderNumber;
+    
+    private Set<PurchaseOrderItem> items = new HashSet<PurchaseOrderItem>();
+    
+    private BigDecimal totalAmount;
+    private BigDecimal totalTax;
+    private BigDecimal totalDelivered;
+    
+    private PurchaseOrderStatus status;
 }

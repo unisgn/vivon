@@ -14,28 +14,28 @@ import com.sink.domain.core.DroidAssistant;
 @RequestMapping("value=/resty/droidassistants")
 public class DroidAssistantController {
 
-	@RequestMapping(method=RequestMethod.GET)
-	@ResponseBody
-	public Map<String, Object> getAllAssistants() {
-		
-	}
-	
-	@RequestMapping(method=RequestMethod.POST)
-	@ResponseBody
-	public Map<String, Object> addAssistant(@RequestBody DroidAssistant assistant) {
-		
-	}
-	
-	@RequestMapping(method=RequestMethod.GET, value="/id/{id}")
-	@ResponseBody
-	public Map<String, Object> getAssistant(@PathVariable int id) {
-		
-	}
-	
-	@RequestMapping(method=RequestMethod.PUT, value="/id/{id}")
-	@ResponseBody
-	public Map<String, Object> updateAssistant(@RequestBody DroidAssistant assistant) {
-		
-	}
-	
+    @RequestMapping(method=RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Object> getAllAssistants() {
+        
+    }
+    
+    @RequestMapping(method=RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> addAssistant(@RequestBody DroidAssistant assistant) {
+        
+    }
+    
+    @RequestMapping(method=RequestMethod.GET, value="/id/{id}")
+    @ResponseBody
+    public Map<String, Object> getAssistant(@PathVariable int id) {
+        
+    }
+    
+    @RequestMapping(method=RequestMethod.PUT, value="/id/{id}")
+    @ResponseBody
+    public Map<String, Object> updateAssistant(@RequestBody DroidAssistant assistant) {
+        
+    }
+    
 }

@@ -12,21 +12,21 @@ import com.sink.lib.core.PartnerRoleLabel;
 @MappedSuperclass
 public class Activity extends EntityAuditable {
 
-	private Date activityDate;
-	private ActivityType type;
-	private String globalActivityNumber;
-	private ActivityStatus globalActivityStatus;
-	private Partner principal;
-	private PartnerRoleLabel principalRole;
-	private DroidAssistant assistant;
-	private User operator;
-	private User supervisor;
-	
-	private String activityDescription;
-	
-	private Date dateOfSubmit;
-	private User submitBy;
-	private Date dateOfApprove;
-	private User approvedBy;
+    private Date activityDate;
+    private ActivityType activityType;
+    private String universalActivityNumber;
+    private ActivityStatus universalActivityStatus;
+    private Partner principal;
+    private PartnerRoleLabel principalRole;
+    private DroidAssistant assistant;
+    private User operator;
+    private User supervisor;
+    
+    private String activityDescription;
+    
+    private Date dateOfSubmit;
+    private User submitBy;
+    private Date dateOfApprove;
+    private User approvedBy;
 
 }

@@ -5,9 +5,9 @@
 @RequestMapping(value="/resty/messages")
 public class MessageController {
 
-	@Autowired
-	MessageService ms;
+    @Autowired
+    MessageService ms;
 
-	@RequestMapping()
+    @RequestMapping()
 
 }

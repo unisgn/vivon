@@ -8,12 +8,12 @@ import com.sink.lib.core.PurchaseInvoiceStatus;
 
 public class PurchaseInvoice {
 
-	private String invoiceNumber;
-	
-	private Set<PurchaseInvoiceItem> items = new HashSet<PurchaseInvoiceItem>();
-	private BigDecimal totalSaleAmount;
-	private BigDecimal totalTaxAmount;
-	private BigDecimal totalPaid;
-	
-	private PurchaseInvoiceStatus status;
+    private String invoiceNumber;
+    
+    private Set<PurchaseInvoiceItem> items = new HashSet<PurchaseInvoiceItem>();
+    private BigDecimal totalSaleAmount;
+    private BigDecimal totalTaxAmount;
+    private BigDecimal totalPaid;
+    
+    private PurchaseInvoiceStatus status;
 }

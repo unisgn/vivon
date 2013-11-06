@@ -14,17 +14,17 @@ import com.sink.lib.core.BuildInUser;
 @Table
 public class User extends EntityBase {
 
-	private String username;
-	private String password;
-	
-	private DroidAssistant assistant;
+    private String username;
+    private String password;
     
-	public User() {}
-	
-	public User(String name, String pw) {
-		this.username = name;
-		this.password = pw;
-	}
-	
-	
+    private DroidAssistant assistant;
+    
+    public User() {}
+    
+    public User(String name, String pw) {
+        this.username = name;
+        this.password = pw;
+    }
+    
+    
 }

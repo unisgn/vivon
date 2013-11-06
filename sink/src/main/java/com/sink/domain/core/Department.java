@@ -5,11 +5,11 @@ import java.util.Set;
 
 public class Department {
 
-	private String number;
-	private String code;
-	private String name;
-	
-	private Employee leader;
-	
-	private Set<Employee> employees = new HashSet<Employee>();
+    private String number;
+    private String code;
+    private String name;
+    
+    private Employee leader;
+    
+    private Set<Employee> employees = new HashSet<Employee>();
 }

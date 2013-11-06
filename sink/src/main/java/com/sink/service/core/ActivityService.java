@@ -10,7 +10,7 @@ import com.sink.lib.core.TimePeriod;
 
 public interface ActivityService {
 
-	public List<Activity> findAllActivitiesByCustomer(Customer customer, TimePeriod period);
-	public List<Activity> findAllActivitiesByVendor(Vendor vendor, TimePeriod period);
-	public List<Activity> findAllActivitiesByType(ActivityType type, TimePeriod period);
+    public List<Activity> findAllActivitiesByCustomer(Customer customer, TimePeriod period);
+    public List<Activity> findAllActivitiesByVendor(Vendor vendor, TimePeriod period);
+    public List<Activity> findAllActivitiesByType(ActivityType type, TimePeriod period);
 }

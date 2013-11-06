@@ -12,15 +12,15 @@ import com.sink.domain.core.MaterialPropertyValue;
 @RequestMapping(value="/resty/materialpropertyvalues")
 public class MaterialPropertyValueController {
 
-	@RequestMapping(method=RequestMethod.GET, value="/{id}")
-	@ResponseBody
-	public Map<String, Object> getMaterialPropertyValue(@PathVariable int id) {
-		
-	}
-	
-	@RequestMapping(method=RequestMethod.PUT, value="/{id}")
-	@ResponseBody
-	public Map<String, Object> updateMaterialPropertyValue(@RequestBody MaterialPropertyValue value) {
-		
-	}
+    @RequestMapping(method=RequestMethod.GET, value="/{id}")
+    @ResponseBody
+    public Map<String, Object> getMaterialPropertyValue(@PathVariable int id) {
+        
+    }
+    
+    @RequestMapping(method=RequestMethod.PUT, value="/{id}")
+    @ResponseBody
+    public Map<String, Object> updateMaterialPropertyValue(@RequestBody MaterialPropertyValue value) {
+        
+    }
 }

@@ -9,12 +9,12 @@ import com.sink.lib.core.SaleReceiptStatus;
 
 public class SaleReceipt {
 
-	private String receiptNumber;
-	
-	private Set<SaleReceiptItem> items = new HashSet<SaleReceiptItem>();
-	
-	private BigDecimal totalAmount;
-	
-	private SaleReceiptStatus receiptStatus;
-	
+    private String receiptNumber;
+    
+    private Set<SaleReceiptItem> items = new HashSet<SaleReceiptItem>();
+    
+    private BigDecimal totalAmount;
+    
+    private SaleReceiptStatus receiptStatus;
+    
 }

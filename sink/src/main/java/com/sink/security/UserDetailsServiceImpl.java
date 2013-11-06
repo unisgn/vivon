@@ -15,14 +15,14 @@ import com.sink.repository.core.UserRepository;
 @Service
 @Transactional
 public class UserDetailsServiceImpl  implements UserDetailsService {
-	
-	@Autowired UserRepository userRepo;
-	@Autowired UserGroupRepository groupRepo;
-	
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		com.sink.domain.core.User u = userRepo.findUserByName(username);
-		org.springframework.security.core.userdetails.User uu = new User(u.getUsername(),u.getPassword(),u.isActive(),true, true, true, AuthorityUtils.NO_AUTHORITIES); 
-		return uu;
-	}
-	
+    
+    @Autowired UserRepository userRepo;
+    @Autowired UserGroupRepository groupRepo;
+    
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        com.sink.domain.core.User u = userRepo.findUserByName(username);
+        org.springframework.security.core.userdetails.User uu = new User(u.getUsername(),u.getPassword(),u.isActive(),true, true, true, AuthorityUtils.NO_AUTHORITIES); 
+        return uu;
+    }
+    
 }

@@ -9,17 +9,17 @@ import com.sink.lib.core.SaleOrderStatus;
 
 public class SaleOrder extends Activity {
 
-	//concreateActivityNumber;
-	private String orderNumber;
-	
+    //concreateActivityNumber;
+    private String concreteActivityNumber;
+    
 
-	private Set<SaleOrderItem> items = new HashSet<SaleOrderItem>();
-	
-	private BigDecimal totalAmount;
-	private BigDecimal totalTax;
-	private BigDecimal totalDelivered;
-	
-	//concreateActivityStatus;
-	private SaleOrderStatus orderStatus;
-	
+    private Set<SaleOrderItem> items = new HashSet<SaleOrderItem>();
+    
+    private BigDecimal totalAmount;
+    private BigDecimal totalTax;
+    private BigDecimal totalDelivered;
+    
+    //concreateActivityStatus;
+    private SaleOrderStatus concreteActivityStatus;
+    
 }

@@ -12,31 +12,31 @@ import com.sink.lib.core.PartnerRoleLabel;
 @Table
 public class Partner extends EntityAuditable {
 
-	@Column(nullable=false, unique=true, updatable=false)
-	private String number;
-	
-	@Column(unique=true)
-	private String code;
-	
-	@Column(nullable=false, unique=true)
-	private String officialName;
-	
-	// custom search key;
-	private String searchKey;
-	
-	// system search field;
-	@JsonIgnore
-	private String searchField;
-	
-	private Set<CustomProperty> privateCustomProperties = new HashSet<CustomProperty>();
-	private Set<CustomProperty> publicCustomProperties = new HashSet<CustomProperty>();
+    @Column(nullable=false, unique=true, updatable=false)
+    private String number;
+    
+    @Column(unique=true)
+    private String code;
+    
+    @Column(nullable=false, unique=true)
+    private String officialName;
+    
+    // custom search key;
+    private String searchKey;
+    
+    // system search field;
+    @JsonIgnore
+    private String searchField;
+    
+    private Set<CustomProperty> privateCustomProperties = new HashSet<CustomProperty>();
+    private Set<CustomProperty> publicCustomProperties = new HashSet<CustomProperty>();
 
-	//TODO
-	private Set<PartnerRoleLabel> roleLabels = new HashSet<PartnerRoleLabel>();
-	
-	private Set<Contact>  contacts = new HashSet<Contact>();
-	private Set<Scn> scns = new HashSet<Scn>();
-	private Set<Address> addresses = new HashSet<Address>();
-	private Set<BankAccount> bankAccounts = new HashSet<BankAccount>();
-	
+    //TODO
+    private Set<PartnerRoleLabel> roleLabels = new HashSet<PartnerRoleLabel>();
+    
+    private Set<Contact>  contacts = new HashSet<Contact>();
+    private Set<Scn> scns = new HashSet<Scn>();
+    private Set<Address> addresses = new HashSet<Address>();
+    private Set<BankAccount> bankAccounts = new HashSet<BankAccount>();
+    
 }

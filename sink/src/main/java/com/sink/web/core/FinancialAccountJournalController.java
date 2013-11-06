@@ -4,21 +4,21 @@ package com.sink.web.core;
 @RequestMapping(value="/resty/financialaccountjournals")
 public class FinancialAccountJournalController {
 
-	@Autowired
-	FinancialAccountJournalService fajs;
+    @Autowired
+    FinancialAccountJournalService fajs;
 
 
-	@RequestMapping(value="/{id}", method=RequestMethod.GET)
-	@ResponseBody
-	public Map<String, Object> findJournalById(@PathVariable int id) {
+    @RequestMapping(value="/{id}", method=RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Object> findJournalById(@PathVariable int id) {
 
-	}
+    }
 
-	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
-	@ResponseBody
-	public Map<String, Object> updateJournal(@RequestBody FinancialAccountJournal journal) {
+    @RequestMapping(value="/{id}", method=RequestMethod.PUT)
+    @ResponseBody
+    public Map<String, Object> updateJournal(@RequestBody FinancialAccountJournal journal) {
 
-	}
+    }
 
 
 

@@ -6,7 +6,7 @@ package com.sink.lib.core;
  *
  */
 public enum BuildInUser {
-	ROOT,
-	ADMIN,
-	SYSTEM;
+    ROOT,
+    ADMIN,
+    SYSTEM;
 }

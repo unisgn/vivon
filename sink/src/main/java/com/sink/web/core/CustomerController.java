@@ -25,53 +25,53 @@ public class CustomerController {
     @Autowired
     CustomerService cs;
     UserService us;
-	CustomerLabelService cls;
+    CustomerLabelService cls;
     
-	@RequestMapping(method=RequestMethod.GET)
-	@ResponseBody
-	public Map<String, Object> findAllCustomers(@RequestParam boolean active) {
-		List<Customer> cl = cs.findAllCustomers(active);
-		return ResponseMap.returnMap("true", cl, "");
-	}
-	
-	@RequestMapping(method=RequestMethod.POST)
-	@ResponseBody
-	public Map<String, Object> addCustomer(@RequestBody Customer customer) {
-		cs.addCustomer(customer);
-		return ResponseMap.returnMap("true", "", "");
-		
-		//TODO catch CustomerExistException;
-	}
-	
-	@RequestMapping(method=RequestMethod.GET, value="/id/{id}")
-	@ResponseBody
-	public Map<String, Object> getCustomer(@PathVariable int id) {
+    @RequestMapping(method=RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Object> findAllCustomers(@RequestParam boolean active) {
+        List<Customer> cl = cs.findAllCustomers(active);
+        return ResponseMap.returnMap("true", cl, "");
+    }
+    
+    @RequestMapping(method=RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> addCustomer(@RequestBody Customer customer) {
+        cs.addCustomer(customer);
+        return ResponseMap.returnMap("true", "", "");
+        
+        //TODO catch CustomerExistException;
+    }
+    
+    @RequestMapping(method=RequestMethod.GET, value="/id/{id}")
+    @ResponseBody
+    public Map<String, Object> getCustomer(@PathVariable int id) {
 
-		Customer c = cs.findCustomerById(id);
-		return ResponseMap.returnMap("true", c, "");
-	}
-	
-	@RequestMapping(method=RequestMethod.PUT, value="/id/{id}")
-	@ResponseBody
-	public Map<String, Object> updateCustomer(@RequestBody Customer customer) {
-		cs.updateCustomer(customer);
-		return ResponseMap.returnMap("true", "", "");
-	}
-	
-	
-	@RequestMapping(value="/search", method=RequestMethod.GEt)
-	@ResponseBody
-	public Map<String, Object> searchCustomers(@RequestParam String searchkey) {
-		List<Customer> cl = cs.searchCustomers(searchkey);
-		return ResponseMap.returnMap("true", cl, "");
-	}
-	
-	@RequestMapping(value="/assistant/id/{assistantId}", method=RequestMethod.GET)
-	@ResponseBody
-	public Map<String, Object> findCustomersByAssistant(@PathVariable int assistantId) {
+        Customer c = cs.findCustomerById(id);
+        return ResponseMap.returnMap("true", c, "");
+    }
+    
+    @RequestMapping(method=RequestMethod.PUT, value="/id/{id}")
+    @ResponseBody
+    public Map<String, Object> updateCustomer(@RequestBody Customer customer) {
+        cs.updateCustomer(customer);
+        return ResponseMap.returnMap("true", "", "");
+    }
+    
+    
+    @RequestMapping(value="/search", method=RequestMethod.GEt)
+    @ResponseBody
+    public Map<String, Object> searchCustomers(@RequestParam String searchkey) {
+        List<Customer> cl = cs.searchCustomers(searchkey);
+        return ResponseMap.returnMap("true", cl, "");
+    }
+    
+    @RequestMapping(value="/assistant/id/{assistantId}", method=RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Object> findCustomersByAssistant(@PathVariable int assistantId) {
 
-	}
+    }
 
-		
+        
 }
 

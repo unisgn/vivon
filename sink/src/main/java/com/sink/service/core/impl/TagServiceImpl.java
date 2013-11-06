@@ -14,29 +14,29 @@ import com.sink.service.core.TagService;
 @Service
 @Transactional
 public class TagServiceImpl implements TagService {
-	
-	@Autowired
-	TagRepository tr;
-	
-	public Tag findTag(int id) {
-		return tr.find(id);
-	}
-	
-	public void addTag(Tag tag) {
-		tr.create(tag);
-	}
-	public void updateTag(Tag tag) {
-		tr.update(tag);
-	}
-	public void deleteTag(int id) {
-		Tag t = tr.find(id);
-		tr.delete(t);
-	}
-	public int getTotalCount() {
-		return tr.getTotalCount();
-	}
-	public List<Tag> getAllTag() {
-		return tr.getAll();
-	}
-	
+    
+    @Autowired
+    TagRepository tr;
+    
+    public Tag findTag(int id) {
+        return tr.find(id);
+    }
+    
+    public void addTag(Tag tag) {
+        tr.create(tag);
+    }
+    public void updateTag(Tag tag) {
+        tr.update(tag);
+    }
+    public void deleteTag(int id) {
+        Tag t = tr.find(id);
+        tr.delete(t);
+    }
+    public int getTotalCount() {
+        return tr.getTotalCount();
+    }
+    public List<Tag> getAllTag() {
+        return tr.getAll();
+    }
+    
 }

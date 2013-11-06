@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class FinancialAccountJournalItem {
 
-	private FinancialAccount account;
-	private BigDecimal debit;
-	private BigDecimal credit;
-	
+    private FinancialAccount account;
+    private BigDecimal debit;
+    private BigDecimal credit;
+    
 }

@@ -6,14 +6,14 @@ import com.sink.domain.core.Contact;
 import com.sink.domain.core.Partner;
 
 public interface ContactService {
-	public Contact findContactById(int id);
-	public Contact findContactByName(String name);
+    public Contact findContactById(int id);
+    public Contact findContactByName(String name);
 
-	public List<Contact> findContactsByPartner(Partner partner);
+    public List<Contact> findContactsByPartner(Partner partner);
 
-	public int addContact(Contact contact);
+    public int addContact(Contact contact);
 
-	public void updateContact(Contact contact);
+    public void updateContact(Contact contact);
     public void toggleActiveOfContact(int id);
     
 

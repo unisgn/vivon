@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class PurchaseQuotation {
 
-	private String quotationNumber;
-	private Set<PurchaseQuotationItem> items = new HashSet<PurchaseQuotationItem>();
-	
-	private PurchaseQuotationStatus status;
+    private String quotationNumber;
+    private Set<PurchaseQuotationItem> items = new HashSet<PurchaseQuotationItem>();
+    
+    private PurchaseQuotationStatus status;
 }

@@ -9,15 +9,15 @@ import com.sink.domain.core.User;
 import com.sink.service.core.UserService;
 
 public class SecurityContext {
-	
-	public static String getPrincipal() {
-		String username;
-		Object principal = SecurityContextHolder.getContext().getAuthentication();
-		if (principal instanceof UserDetails) {
-			username = ((UserDetails)principal).getUsername();
-		} else {
-			username = principal.toString();
-		}
-		return username;
-	}
+    
+    public static String getPrincipal() {
+        String username;
+        Object principal = SecurityContextHolder.getContext().getAuthentication();
+        if (principal instanceof UserDetails) {
+            username = ((UserDetails)principal).getUsername();
+        } else {
+            username = principal.toString();
+        }
+        return username;
+    }
 }

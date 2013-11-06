@@ -8,8 +8,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table
 public class MaterialPropertyValue extends EntityBase {
-	@JsonIgnore
-	private MaterialPropertyName name;
-	private String value;
-	
+    @JsonIgnore
+    private MaterialPropertyName name;
+    private String value;
+    
 }

@@ -9,7 +9,7 @@ import com.sink.lib.core.ScnType;
  *
  */
 public class Scn {
-	private ScnType type;
-	private String label;
-	private String number;
+    private ScnType type;
+    private String label;
+    private String number;
 }

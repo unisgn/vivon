@@ -11,16 +11,16 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table
 public class Bom extends EntityBase {
 
-	@JsonIgnore
-	private Material material;
-	
-	@Transient
-	private String name;
-	
-	private Set<BomItem> items = new HashSet<BomItem>();
-	
-	private Bom parent;
-	private Set<Bom> children = new HashSet<Bom>();
-	private boolean leaf;
-	
+    @JsonIgnore
+    private Material material;
+    
+    @Transient
+    private String name;
+    
+    private Set<BomItem> items = new HashSet<BomItem>();
+    
+    private Bom parent;
+    private Set<Bom> children = new HashSet<Bom>();
+    private boolean leaf;
+    
 }

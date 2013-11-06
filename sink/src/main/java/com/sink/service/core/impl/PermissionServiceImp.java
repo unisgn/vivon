@@ -13,10 +13,10 @@ import com.sink.service.core.PermissionService;
 @Service
 @Transactional
 public class PermissionServiceImp implements PermissionService {
-	
-	@Autowired
-	PermissionRepository pr;
-	public List<Permission> getAll() {
-		return pr.getAll();
-	}
+    
+    @Autowired
+    PermissionRepository pr;
+    public List<Permission> getAll() {
+        return pr.getAll();
+    }
 }

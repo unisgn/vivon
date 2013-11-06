@@ -9,13 +9,13 @@ import com.sink.lib.core.DeliveryW2CStatus;
 
 public class DeliveryW2C {
 
-	private String deliveryNumber;
+    private String deliveryNumber;
 
-	
-	private Set<DeliveryW2CItem> items = new HashSet<DeliveryW2CItem>();
-	
-	private DeliveryW2CStatus status;
+    
+    private Set<DeliveryW2CItem> items = new HashSet<DeliveryW2CItem>();
+    
+    private DeliveryW2CStatus status;
 
-	private BigDecimal totalAmount;
-	private BigDecimal totalInvoiced;
+    private BigDecimal totalAmount;
+    private BigDecimal totalInvoiced;
 }

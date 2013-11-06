@@ -10,15 +10,15 @@ import com.sink.lib.core.FactoryOrderStatus;
 
 public class FactoryOrder {
 
-	private Date orderDate;
-	private String orderNumber;
-	
-	private List<FactoryOrderItem> items = new ArrayList<FactoryOrderItem>();
-	
-	private FactoryOrderStatus orderStatus;
-	
-	private User submitBy;
-	private Date dateOfSubmit;
-	private User approvedBy;
-	private Date dateOfApprove;
+    private Date orderDate;
+    private String orderNumber;
+    
+    private List<FactoryOrderItem> items = new ArrayList<FactoryOrderItem>();
+    
+    private FactoryOrderStatus orderStatus;
+    
+    private User submitBy;
+    private Date dateOfSubmit;
+    private User approvedBy;
+    private Date dateOfApprove;
 }

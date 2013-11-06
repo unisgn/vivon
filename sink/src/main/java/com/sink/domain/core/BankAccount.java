@@ -7,8 +7,8 @@ import javax.persistence.Table;
 @Table
 public class BankAccount extends EntityBase {
 
-	private String bankBranch;
-	private String accountName;
-	private String accountNumber;
-	
+    private String bankBranch;
+    private String accountName;
+    private String accountNumber;
+    
 }

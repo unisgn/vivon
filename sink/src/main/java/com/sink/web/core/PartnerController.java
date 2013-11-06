@@ -21,23 +21,23 @@ public class PartnerController {
     @Autowired
     PartnerService ps;
 
-	@RequestMapping(method=RequestMethod.GET)
-	public Map<String, Object> findAllPartners(@RequestParam boolean active) {
-		List<Partner> pl = ps.findAllPartners(active);
-		return ResponseMap.returnMap("true", pl, "");
-	}
+    @RequestMapping(method=RequestMethod.GET)
+    public Map<String, Object> findAllPartners(@RequestParam boolean active) {
+        List<Partner> pl = ps.findAllPartners(active);
+        return ResponseMap.returnMap("true", pl, "");
+    }
 
-	@RequestMapping(method=RequestMethod.GET, value="/rolelabel/{roleLabel}")
-	public Map<String, Object> findPartnersByRoleLabel(@PathVariable PartnerRoleLabel roleLabel, @RequestParam boolean active) {
-		List<Partner> pl = ps.findPartnersByRoleLabel(roleLabel, active);
-		return ResponseMap.returnMap("true", pl, "");
-	}
+    @RequestMapping(method=RequestMethod.GET, value="/rolelabel/{roleLabel}")
+    public Map<String, Object> findPartnersByRoleLabel(@PathVariable PartnerRoleLabel roleLabel, @RequestParam boolean active) {
+        List<Partner> pl = ps.findPartnersByRoleLabel(roleLabel, active);
+        return ResponseMap.returnMap("true", pl, "");
+    }
 
-	@RequestMapping(method=RequestMethod.GET, value="/id/{id}")
-	public Map<String, Object> getPartnerById(@PathVariable int id) {
-		Partner p = ps.findPartnerById(id);
-		return ResponseMap.returnMap("true", p, "");
-	}
+    @RequestMapping(method=RequestMethod.GET, value="/id/{id}")
+    public Map<String, Object> getPartnerById(@PathVariable int id) {
+        Partner p = ps.findPartnerById(id);
+        return ResponseMap.returnMap("true", p, "");
+    }
 
-	
+    
 }

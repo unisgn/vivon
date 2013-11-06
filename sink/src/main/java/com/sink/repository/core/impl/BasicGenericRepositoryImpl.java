@@ -15,45 +15,45 @@ import com.sink.repository.core.BasicGenericRepository;
 public class BasicGenericRepositoryImpl<T> implements BasicGenericRepository<T> {
 
 
-	private Class<T> type;
-	
-	@Autowired
-	private SessionFactory sessionFactory;
-	
-	
-	public Session getSession() {
-		return sessionFactory.getCurrentSession();
-	}
-	
+    private Class<T> type;
+    
+    @Autowired
+    private SessionFactory sessionFactory;
+    
+    
+    public Session getSession() {
+        return sessionFactory.getCurrentSession();
+    }
+    
 
-	public Class<T> getType() {
-		return type;
-	}
+    public Class<T> getType() {
+        return type;
+    }
 
-	@SuppressWarnings("unchecked")
-	public BasicGenericRepositoryImpl() {
-		this.type = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
-	}
-	
-	
-	
-	
-	@SuppressWarnings("unchecked")
-	public T find(int id) {
-		return (T) getSession().get(getType(), id);
-	}
-	
+    @SuppressWarnings("unchecked")
+    public BasicGenericRepositoryImpl() {
+        this.type = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+    }
+    
+    
+    
+    
+    @SuppressWarnings("unchecked")
+    public T find(int id) {
+        return (T) getSession().get(getType(), id);
+    }
+    
 
-	public int create(T entity) {
-		return (Integer) getSession().save(entity);
-	}
-	public void update(T entity) {
-		getSession().update(entity);
-	}
+    public int create(T entity) {
+        return (Integer) getSession().save(entity);
+    }
+    public void update(T entity) {
+        getSession().update(entity);
+    }
 
-	public void delete(T entity) {
-		getSession().delete(entity);
-	}
-	
+    public void delete(T entity) {
+        getSession().delete(entity);
+    }
+    
 
 }
