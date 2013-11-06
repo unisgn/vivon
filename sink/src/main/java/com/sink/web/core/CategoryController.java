@@ -107,7 +107,7 @@ public class CategoryController {
         rm.put("success", "true");
         rm.put("message", "get node");
         if(node==0) {
-            List<Category> sc = serv.findAllCategoriesWithNoParent();
+            List<Category> sc = serv.findRootCategories();
             rm.put("data", sc);
         } else {
             Set<Category> sc = serv.getCategory(node).getChildren();

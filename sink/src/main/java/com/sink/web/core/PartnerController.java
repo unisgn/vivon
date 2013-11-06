@@ -22,7 +22,7 @@ public class PartnerController {
     PartnerService ps;
 
     @RequestMapping(method=RequestMethod.GET)
-    public Map<String, Object> findAllPartners(@RequestParam boolean active) {
+    public Map<String, Object> findAllPartners() {
         List<Partner> pl = ps.findAllPartners(active);
         return ResponseMap.returnMap("true", pl, "");
     }
@@ -38,6 +38,4 @@ public class PartnerController {
         Partner p = ps.findPartnerById(id);
         return ResponseMap.returnMap("true", p, "");
     }
-
-    
 }

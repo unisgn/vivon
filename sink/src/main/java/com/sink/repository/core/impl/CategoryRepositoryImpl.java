@@ -10,7 +10,7 @@ import com.sink.repository.core.CategoryRepository;
 @Repository
 public class CategoryRepositoryImpl extends AdvancedGenericRepositoryImpl<Category> implements CategoryRepository {
     @SuppressWarnings("unchecked")
-    public List<Category> findAllCategoriesWithNoParent() {
+    public List<Category> findRootCategories() {
         String hql = " SELECT c FROM Category c where c.parent is null ";
         return getSession().createQuery(hql).list();
     }

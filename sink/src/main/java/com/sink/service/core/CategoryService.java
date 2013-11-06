@@ -13,5 +13,5 @@ public interface CategoryService {
     public void addChildCategory(int childId, int parentId);
     public void removeChildCategory(int childId, int parentId);
     
-    public List<Category> findAllCategoriesWithNoParent();
+    public List<Category> findRootCategories();
 }

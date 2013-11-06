@@ -53,7 +53,7 @@ public class CategoryServiceImpl implements CategoryService {
         repo.update(c);
     }
     
-    public List<Category> findAllCategoriesWithNoParent() {
-        return repo.findAllCategoriesWithNoParent();
+    public List<Category> findRootCategories() {
+        return repo.findRootCategories();
     }
 }
