@@ -3,7 +3,6 @@ package com.sink.service.core;
 import java.util.List;
 
 import com.sink.domain.core.Partner;
-import com.sink.lib.core.PartnerRoleLabel;
 
 public interface PartnerService {
     
@@ -13,7 +12,6 @@ public interface PartnerService {
     public Partner findPartnerByName(String name);
     
     public List<Partner> findAllPartners();
-    public List<Partner> findPartnersByRoleLabel(PartnerRoleLabel label);
     public List<Partner> searchPartners(String keyword);
     
 }
