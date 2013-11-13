@@ -8,16 +8,16 @@ public class Attachment extends EntityBase {
     
     private String urn;
     
-    private String originalFileName;
+    private String originalName;
     private String mime;
-    private String size;
+    private int size;        // in byte
     
     private Date dateOfUpload;
     private User uploadedBy;
     private Date dateOfLastDownload;
     private User lastDownloadedBy;
     
-    private int totalDownload;
+    private int totalDownloads;
     
     
     private Set<AttachmentAccessJournal> accessJournals = new HashSet<AttachmentAccessJournal>();

@@ -21,11 +21,11 @@ public class Activity extends EntityAuditable {
     private User operator;
     private User supervisor;
     
-    private String description;
+    private String summary;
     
     private Date dateOfSubmit;
-    private User submitBy;
+    private User submitBy;      // operator
     private Date dateOfApprove;
-    private User approvedBy;
+    private User approvedBy;    // supervisor
 
 }

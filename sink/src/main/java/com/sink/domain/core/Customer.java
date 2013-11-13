@@ -29,10 +29,6 @@ public class Customer extends EntityAuditable {
     @JsonIgnore
     private String searchField;
     
-    @Embedded
-    private CompanyTaxRegisterInfo taxInfo;
-    
-    
     private Set<CustomerLabel> labels = new HashSet<CustomerLabel>();
     
     public Customer() {}

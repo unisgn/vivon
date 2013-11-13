@@ -15,13 +15,5 @@ public class Vendor extends EntityAuditable {
         
     private Set<VendorLabel> labels = new HashSet<VendorLabel>();
     
-    private Set<Note> privateNotes = new HashSet<Note>();
-    private Set<Note> publicNotes = new HashSet<Note>();
-    
-    private Set<Attachment> privateAttachments = new HashSet<Attachment>();
-    private Set<Attachment> publicAttachments = new HashSet<Attachment>();
-    
-    private Set<CustomProperty> privateCustomProperty = new HashSet<CustomProperty>();
-    private Set<CustomProperty> publicCustomProperty = new HashSet<CustomProperty>();
 
 }

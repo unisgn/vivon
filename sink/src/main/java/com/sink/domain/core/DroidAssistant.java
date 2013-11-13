@@ -7,4 +7,5 @@ public class DroidAssistant {
     private String searchKey;
     
     private User master;
+    // private DroidMasterGroup masterGroup;
 }

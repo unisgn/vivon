@@ -26,7 +26,9 @@ public class Partner extends EntityAuditable {
     @JsonIgnore
     private String searchField;    // system search field;
     
-
+    @Embedded
+    private CompanyTaxRegisterInfo taxInfo;
+    
     private Boolean isCustomer;
     
     private Set<Contact>  contacts = new HashSet<Contact>();
