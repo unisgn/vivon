@@ -21,33 +21,26 @@ public class EntityBase {
     
     private boolean active;
     
-    private String memo;
-    
     public Integer getId() {
         return id;
     }
-    public void setId(Integer id) {
+    private void setId(Integer id) { // should only be accessed by Hibernate
         this.id = id;
     }
     public Integer getVersion() {
         return version;
     }
-    public void setVersion(Integer version) {
+    private void setVersion(Integer version) { // should only be accessed by Hibernate
         this.version = version;
     }
+
+    
     public boolean isActive() {
         return active;
     }
     public void setActive(boolean active) {
         this.active = active;
     }
-    public String getMemo() {
-        return memo;
-    }
-    public void setMemo(String memo) {
-        this.memo = memo;
-    }
-    
     
     
 }

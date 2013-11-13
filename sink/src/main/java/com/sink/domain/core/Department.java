@@ -9,7 +9,7 @@ public class Department {
     private String code;
     private String name;
     
-    private Employee leader;
+    private Employee manager;
     
     private Set<Employee> employees = new HashSet<Employee>();
 }

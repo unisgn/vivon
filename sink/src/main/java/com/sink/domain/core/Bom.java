@@ -15,12 +15,12 @@ public class Bom extends EntityBase {
     private Material material;
     
     @Transient
-    private String name;
+    private String partName;
     
     private Set<BomItem> items = new HashSet<BomItem>();
     
-    private Bom parent;
-    private Set<Bom> children = new HashSet<Bom>();
-    private boolean leaf;
+    private Bom parentNode;
+    private Set<Bom> childNodes = new HashSet<Bom>();
+    private boolean leaf;       // true if have no child node
     
 }

@@ -41,14 +41,5 @@ public interface CustomerService {
     public void addLabelToCustomer(CustomerLabel label, Customer customer);
     
     public void assignCustomerToAssistant(Customer customer, DroidAssistant assistant);
-    
-    public void addPrivateNoteToCustomer(Note note, Customer customer);
-    public void addPublicNoteToCustomer(Note note, Customer customer);
-    
-    public void addPrivateAttachmentToCustomer(Attachment attachment, Customer customer);
-    public void addPublicAttachmentToCustomer(Attachment attachment, Customer customer);
-    
-    public void addPrivateCustomPropertyToCustomer(CustomProperty property, Customer customer);
-    public void addPublicCustomPropertyToCustomer(CustomProperty property, Customer customer);
 
 }

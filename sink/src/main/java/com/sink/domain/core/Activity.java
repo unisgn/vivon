@@ -7,22 +7,21 @@ import javax.persistence.MappedSuperclass;
 
 import com.sink.lib.core.ActivityStatus;
 import com.sink.lib.core.ActivityType;
-import com.sink.lib.core.PartnerRoleLabel;
 
 @MappedSuperclass
 public class Activity extends EntityAuditable {
 
-    private Date activityDate;
-    private ActivityType activityType;
-    private String universalActivityNumber;
-    private ActivityStatus universalActivityStatus;
+    private Date actDate;
+    private ActivityType actType;
+    private String gblActNo; // global activity number
+    private ActivityStatus gblActStat; // global activity status
+    
     private Partner principal;
-    private PartnerRoleLabel principalRole;
     private DroidAssistant assistant;
     private User operator;
     private User supervisor;
     
-    private String activityDescription;
+    private String description;
     
     private Date dateOfSubmit;
     private User submitBy;

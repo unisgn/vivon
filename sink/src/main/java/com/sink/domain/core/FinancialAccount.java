@@ -5,14 +5,20 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FinancialAccount {
-    
+    @Column(nullable=false, unique=true)
     private String number;
+    
+    @Column(unique=true)
+    private String code;
+    
     private String name;
+    
     private FinancialAccountType type;
     
-    private FinancialAccount parent;
-    private Set<FinancialAccount> children = new HashSet<FinancialAccount>();
-    private boolean leaf;
-    
+    private FinancialAccount parentNode;
+    private Set<FinancialAccount> childNodes = new HashSet<FinancialAccount>();
+    @Column(nullable=false)
+    private boolean leaf;       // true if have no childNodes
+    @Column(nullable=false)
     private BigDecimal balance;
 }

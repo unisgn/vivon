@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Table
 public class Material extends EntityAuditable {
 
-    @Column(nullable=false)
+    @Column(nullable=false, unique=true, updatable=false)
     private String number;
     
     private String code;
@@ -25,24 +25,13 @@ public class Material extends EntityAuditable {
     private MaterialCategory category;
     private Set<MaterialPropertyValue> propertySet = new HashSet<MaterialPropertyValue>();
     
-    private Uom uom;
-    
     private Bom bom;
-    
-    // assembly also means has a bom;
-    private boolean assembly;
+    private boolean assembly;    // true if bom is not null;
     
     private Set<MaterialStorageInfo> storageInfo = new HashSet<MaterialStorageInfo>();
-    
-    private BigDecimal instantValue;
-    
-    private Set<Note> privateNotes = new HashSet<Note>();
-    private Set<Note> publicNotes = new HashSet<Note>();
 
-    private Set<Attachment> privateAttachments = new HashSet<Attachment>();
-    private Set<Attachment> publicAttachments = new HashSet<Attachment>();
-    
-    private Set<CustomProperty> privateCustomProperty = new HashSet<CustomProperty>();
-    private Set<CustomProperty> publicCustomProperty = new HashSet<CustomProperty>();
-
+    private Uom uom;
+    private int totalStock;     // stock in uom
+    private BigDecimal currentValuePerUom;
+    private BigDecimal currentTotalStockValue;
 }
