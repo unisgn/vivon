@@ -21,18 +21,13 @@ public class Partner extends EntityAuditable {
     @Column(nullable=false, unique=true)
     private String officialName;
     
-    // custom search key;
-    private String searchKey;
+    private String searchKey;    // custom search key;
     
-    // system search field;
     @JsonIgnore
-    private String searchField;
+    private String searchField;    // system search field;
     
-    private Set<CustomProperty> privateCustomProperties = new HashSet<CustomProperty>();
-    private Set<CustomProperty> publicCustomProperties = new HashSet<CustomProperty>();
 
-    //TODO
-    private Set<PartnerRoleLabel> roleLabels = new HashSet<PartnerRoleLabel>();
+    private Boolean isCustomer;
     
     private Set<Contact>  contacts = new HashSet<Contact>();
     private Set<Scn> scns = new HashSet<Scn>();
