@@ -34,9 +34,7 @@ public interface CustomerService {
 
     public int addCustomer(Customer customer);
     
-    public void updateCustomer(Customer customer);
-
-    public void toggleActiveOfCustomer(int id);    
+    public void updateCustomer(Customer customer);  
 
     public void addLabelToCustomer(CustomerLabel label, Customer customer);
     
