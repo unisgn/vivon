@@ -11,6 +11,5 @@ public interface UserService {
     
     public int addUser(User user);
     public void updateUser(User user);
-    public void toggleOfUser(int id);
     
 }
